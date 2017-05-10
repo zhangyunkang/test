@@ -1,0 +1,15 @@
+配置用户信息
+$ git config --global user.name "zhangyunkang"
+$ git config --global user.email "1124773718@qq.com"
+$ git init //初始化版本库
+$ git add readme.txt //把文件readme.txt添加到暂存区
+$ git add . //将当前目录下所有有修改文件添加到暂存区
+$ git commit -m "write a readme file" //提交修改
+$ git status  //查看仓库当前的状态
+$ git diff readme.txt  //查看具体修改了什么内容
+$ git log  //查看历史记录可以查看到比较详细的历史记录
+$ git log --pretty=oneline //查看只包含commitid的历史记录
+HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，往上100个版本HEAD~100
+git reset --hard HEAD^ //把当前版本回退到上一个版本
+$ git reflog //查看每一次命令
+git checkout -- file  //丢弃工作区的修改
