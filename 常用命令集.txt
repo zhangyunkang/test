@@ -12,4 +12,5 @@ $ git log --pretty=oneline //查看只包含commitid的历史记录
 HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，往上100个版本HEAD~100
 git reset --hard HEAD^ //把当前版本回退到上一个版本
 $ git reflog //查看每一次命令
-git checkout -- file  //丢弃工作区的修改
+$ git checkout -- file  //丢弃工作区的修改
+$ git reset HEAD file  //把暂存区的修改撤销掉（unstage），重新放回工作区
