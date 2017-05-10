@@ -14,3 +14,7 @@ git reset --hard HEAD^ //把当前版本回退到上一个版本
 $ git reflog //查看每一次命令
 $ git checkout -- file  //丢弃工作区的修改
 $ git reset HEAD file  //把暂存区的修改撤销掉（unstage），重新放回工作区
+$ ssh-keygen -t rsa -C "youremail@example.com" //创建SSH Key 一路按enter默认
+//将已经存在的版本库推送到github上
+$ git remote add origin git@github.com:zhangyunkang/test.git 
+$ git push -u origin master
